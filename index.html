@@ -3,9 +3,28 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#17130f">
-  <meta name="description" content="Avena Power: galletas de avena con cacao puro. Energía sencilla, sabor real.">
+  <meta name="theme-color" content="#1c1712">
+  <meta name="description" content="Avena Power: galletas de avena con cacao puro. Energía sencilla, sabor real. Hecho en Lima, Perú.">
+  <meta name="author" content="Avena Power">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Avena Power — Sabor que te mueve">
+  <meta property="og:description" content="Galletas de avena con cacao puro. Energía sencilla, sabor real. Hecho en Lima, Perú.">
+  <meta property="og:locale" content="es_PE">
+  <meta property="og:site_name" content="Avena Power">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Avena Power — Sabor que te mueve">
+  <meta name="twitter:description" content="Galletas de avena con cacao puro. Energía sencilla, sabor real.">
+
   <title>Avena Power — Sabor que te mueve</title>
+
+  <!-- Favicon (simple SVG) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%231c1712'/%3E%3Ctext x='50' y='62' font-family='Georgia,serif' font-size='42' font-weight='700' text-anchor='middle' fill='%23d56c36'%3EA+%3C/text%3E%3C/svg%3E">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
@@ -13,75 +32,136 @@
   <script src="script.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#inicio">Saltar al contenido</a>
+
   <div class="grain" aria-hidden="true"></div>
+
   <header class="site-header">
     <a class="brand" href="#inicio" aria-label="Avena Power, inicio">
-      <span class="brand-mark">A<span>+</span></span>
+      <span class="brand-mark" aria-hidden="true">A<span>+</span></span>
       <span>AVENA <b>POWER</b></span>
     </a>
-    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span></button>
-    <nav class="nav" aria-label="Navegación principal">
+    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav">
+      <span></span><span></span>
+    </button>
+    <nav class="nav" id="main-nav" aria-label="Navegación principal">
       <a href="#historia">Nuestra idea</a>
       <a href="#ingredientes">Ingredientes</a>
       <a href="#propuesta">La propuesta</a>
-      <a class="nav-cta" href="#contacto">Conócenos <span>↗</span></a>
+      <a class="nav-cta" href="#contacto">Conócenos <span aria-hidden="true">↗</span></a>
     </nav>
   </header>
 
   <main>
     <section class="hero" id="inicio">
       <div class="hero-copy reveal">
-        <p class="eyebrow"><span></span> HECHO CON INTENCIÓN · HECHO PARA DISFRUTAR</p>
+        <p class="eyebrow"><span aria-hidden="true"></span> HECHO CON INTENCIÓN · HECHO PARA DISFRUTAR</p>
         <h1>Un pequeño<br>antojo. <em>Gran</em><br><em>energía.</em></h1>
         <p class="hero-description">Avena, cacao puro y una idea sencilla: convertir ingredientes cotidianos en algo que provoca compartir.</p>
         <div class="hero-actions">
-          <a class="button button-light" href="#historia">Descubre Avena Power <span>↘</span></a>
+          <a class="button button-light" href="#historia">Descubre Avena Power <span aria-hidden="true">↘</span></a>
           <span class="hero-note">GALLETAS ARTESANALES<br>CON AVENA Y CACAO</span>
         </div>
       </div>
-      <div class="hero-art reveal">
-        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+      <div class="hero-art reveal" aria-hidden="true">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
         <div class="sun-disc"></div>
         <div class="cookie cookie-back"><i></i><i></i><i></i><i></i><i></i></div>
         <div class="cookie cookie-front"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
         <span class="art-label label-top">CACAO PURO<br>01 / ORIGINAL</span>
         <span class="art-label label-bottom">SIMPLE INGREDIENTS<br>REAL GOOD MOOD</span>
-        <span class="spark spark-one">✳</span><span class="spark spark-two">✳</span>
+        <span class="spark spark-one">✳</span>
+        <span class="spark spark-two">✳</span>
       </div>
-      <div class="hero-bottom"><span>LIMA, PERÚ</span><span>UNA IDEA QUE SE COMPARTE</span><span>01 — 03</span></div>
+      <div class="hero-bottom">
+        <span>LIMA, PERÚ</span>
+        <span>UNA IDEA QUE SE COMPARTE</span>
+        <span>01 — 03</span>
+      </div>
     </section>
 
     <section class="intro section-pad" id="historia">
       <div class="section-index reveal">01 / NUESTRA IDEA</div>
       <div class="intro-grid">
         <h2 class="reveal">Lo cotidiano<br>puede ser <em>extraordinario.</em></h2>
-        <div class="intro-text reveal"><p>Creemos que una buena galleta no necesita complicarse. Partimos de la avena y el cacao puro para crear una propuesta rica, cercana y pensada con cuidado.</p><a class="text-link" href="#ingredientes">Conoce lo que lleva <span>↗</span></a></div>
+        <div class="intro-text reveal">
+          <p>Creemos que una buena galleta no necesita complicarse. Partimos de la avena y el cacao puro para crear una propuesta rica, cercana y pensada con cuidado.</p>
+          <a class="text-link" href="#ingredientes">Conoce lo que lleva <span aria-hidden="true">↗</span></a>
+        </div>
       </div>
-      <div class="marquee" aria-hidden="true"><div>AVENA · CACAO · SABOR · AVENA · CACAO · SABOR ·&nbsp;</div></div>
+      <div class="marquee" aria-hidden="true">
+        <div>AVENA · CACAO · SABOR · AVENA · CACAO · SABOR ·&nbsp;</div>
+      </div>
     </section>
 
     <section class="ingredients section-pad" id="ingredientes">
       <div class="section-index reveal">02 / LO QUE NOS MUEVE</div>
-      <div class="ingredient-heading reveal"><h2>Menos vueltas.<br><em>Más esencia.</em></h2><p>Una combinación sencilla donde cada ingrediente tiene algo que aportar.</p></div>
+      <div class="ingredient-heading reveal">
+        <h2>Menos vueltas.<br><em>Más esencia.</em></h2>
+        <p>Una combinación sencilla donde cada ingrediente tiene algo que aportar.</p>
+      </div>
       <div class="ingredient-cards">
-        <article class="ingredient-card oat reveal"><div class="card-number">01</div><div class="ingredient-visual oat-visual"><span>✳</span><span>✳</span><span>✳</span></div><div><p class="card-kicker">LA BASE</p><h3>Avena</h3><p>El ingrediente protagonista: versátil, familiar y lleno de textura.</p></div></article>
-        <article class="ingredient-card cocoa reveal"><div class="card-number">02</div><div class="ingredient-visual cocoa-visual"><span>●</span><span>●</span><span>●</span></div><div><p class="card-kicker">EL CARÁCTER</p><h3>Cacao puro</h3><p>Un toque intenso que aporta profundidad y ese sabor tan especial.</p></div></article>
-        <article class="ingredient-card care reveal"><div class="card-number">03</div><div class="ingredient-visual care-visual">A<span>+</span></div><div><p class="card-kicker">LA DIFERENCIA</p><h3>Hecho con cuidado</h3><p>Elegimos y comunicamos nuestros ingredientes con transparencia.</p></div></article>
+        <article class="ingredient-card oat reveal">
+          <div class="card-number">01</div>
+          <div class="ingredient-visual oat-visual" aria-hidden="true"><span>✳</span><span>✳</span><span>✳</span></div>
+          <div>
+            <p class="card-kicker">LA BASE</p>
+            <h3>Avena</h3>
+            <p>El ingrediente protagonista: versátil, familiar y lleno de textura.</p>
+          </div>
+        </article>
+        <article class="ingredient-card cocoa reveal">
+          <div class="card-number">02</div>
+          <div class="ingredient-visual cocoa-visual" aria-hidden="true"><span>●</span><span>●</span><span>●</span></div>
+          <div>
+            <p class="card-kicker">EL CARÁCTER</p>
+            <h3>Cacao puro</h3>
+            <p>Un toque intenso que aporta profundidad y ese sabor tan especial.</p>
+          </div>
+        </article>
+        <article class="ingredient-card care reveal">
+          <div class="card-number">03</div>
+          <div class="ingredient-visual care-visual" aria-hidden="true">A<span>+</span></div>
+          <div>
+            <p class="card-kicker">LA DIFERENCIA</p>
+            <h3>Hecho con cuidado</h3>
+            <p>Elegimos y comunicamos nuestros ingredientes con transparencia.</p>
+          </div>
+        </article>
       </div>
       <p class="small-print">La composición y los valores nutricionales deben confirmarse con la receta final del producto.</p>
     </section>
 
     <section class="manifesto" id="propuesta">
-      <div class="manifesto-inner reveal"><p class="eyebrow">AVENA POWER / NUESTRA PROPUESTA</p><h2>La energía está<br>en las <em>pequeñas</em><br>decisiones.</h2><p>Una galleta para disfrutar el momento, compartir una pausa y seguir con tu día.</p><a class="button button-dark" href="#contacto">Esto es Avena Power <span>↗</span></a></div>
-      <div class="manifesto-stamp">AP<br><small>2026</small></div>
+      <div class="manifesto-inner reveal">
+        <p class="eyebrow">AVENA POWER / NUESTRA PROPUESTA</p>
+        <h2>La energía está<br>en las <em>pequeñas</em><br>decisiones.</h2>
+        <p>Una galleta para disfrutar el momento, compartir una pausa y seguir con tu día.</p>
+        <a class="button button-dark" href="#contacto">Esto es Avena Power <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="manifesto-stamp" aria-hidden="true">AP<br><small>2026</small></div>
     </section>
 
     <section class="contact section-pad" id="contacto">
       <div class="section-index reveal">03 / SIGAMOS EN CONTACTO</div>
-      <div class="contact-row reveal"><h2>¿Te dio<br><em>curiosidad?</em></h2><div><p>Estamos presentando nuestra propuesta. Muy pronto compartiremos más novedades de Avena Power.</p><a class="text-link" href="mailto:avenapower.contacto@gmail.com?subject=Quiero%20conocer%20Avena%20Power">Escríbenos <span>↗</span></a></div></div>
+      <div class="contact-row reveal">
+        <h2>¿Te dio<br><em>curiosidad?</em></h2>
+        <div>
+          <p>Estamos presentando nuestra propuesta. Muy pronto compartiremos más novedades de Avena Power.</p>
+          <a class="text-link" href="mailto:avenapower.contacto@gmail.com?subject=Quiero%20conocer%20Avena%20Power">Escríbenos <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer class="footer"><a class="brand" href="#inicio"><span class="brand-mark">A<span>+</span></span><span>AVENA <b>POWER</b></span></a><span>UNA IDEA CON SABOR A FUTURO.</span><span>© <span id="year">2026</span> AVENA POWER</span></footer>
+  <footer class="footer">
+    <a class="brand" href="#inicio" aria-label="Avena Power, inicio">
+      <span class="brand-mark" aria-hidden="true">A<span>+</span></span>
+      <span>AVENA <b>POWER</b></span>
+    </a>
+    <span>UNA IDEA CON SABOR A FUTURO.</span>
+    <span>© <span id="year">2026</span> AVENA POWER</span>
+  </footer>
 </body>
 </html>
